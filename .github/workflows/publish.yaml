@@ -6,11 +6,16 @@ on:
 name: Quarto Publish
 
 jobs:
-  build-deploy:
+
+  quarto-build-deploy:
+
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
+
       - name: Check out repository
         uses: actions/checkout@v4
 
@@ -39,4 +44,3 @@ jobs:
           target: gh-pages
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
