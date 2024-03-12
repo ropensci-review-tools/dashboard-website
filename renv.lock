@@ -194,9 +194,13 @@
     "dashboard": {
       "Package": "dashboard",
       "Version": "0.0.3",
-      "Source": "Local",
-      "RemoteType": "local",
-      "RemoteUrl": "/data/mega/code/repos/ropensci-review-tools/dashboard-pkg",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "dashboard",
+      "RemoteUsername": "ropensci-review-tools",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "7eba95ccd3e3a6adfa95dc455ec1ff5a42d4d7ca",
       "Requirements": [
         "dplyr",
         "gh",
@@ -204,7 +208,7 @@
         "gt",
         "lubridate"
       ],
-      "Hash": "cd109fbcf2005ab71b4234196cb5de25"
+      "Hash": "49029542d6a752e094dd24981c37778e"
     },
     "digest": {
       "Package": "digest",
