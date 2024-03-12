@@ -193,7 +193,7 @@
     },
     "dashboard": {
       "Package": "dashboard",
-      "Version": "0.0.2.003",
+      "Version": "0.0.3",
       "Source": "Local",
       "RemoteType": "local",
       "RemoteUrl": "/data/mega/code/repos/ropensci-review-tools/dashboard-pkg",
@@ -204,7 +204,7 @@
         "gt",
         "lubridate"
       ],
-      "Hash": "b865c55db965701ad223f65c817c123c"
+      "Hash": "cd109fbcf2005ab71b4234196cb5de25"
     },
     "digest": {
       "Package": "digest",
