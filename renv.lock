@@ -193,22 +193,21 @@
     },
     "dashboard": {
       "Package": "dashboard",
-      "Version": "0.0.3",
+      "Version": "0.0.3.001",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "dashboard",
+      "RemoteRepo": "dashboard-pkg",
       "RemoteUsername": "ropensci-review-tools",
       "RemoteRef": "HEAD",
-      "RemoteSha": "7eba95ccd3e3a6adfa95dc455ec1ff5a42d4d7ca",
+      "RemoteSha": "c20fd1e256217bdb45104fe9890613c4b708deb2",
       "Requirements": [
         "dplyr",
         "gh",
-        "gitcreds",
         "gt",
         "lubridate"
       ],
-      "Hash": "49029542d6a752e094dd24981c37778e"
+      "Hash": "b78638a11f51bc1e136a106da29acaa0"
     },
     "digest": {
       "Package": "digest",
