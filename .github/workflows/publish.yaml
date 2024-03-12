@@ -27,12 +27,6 @@ jobs:
         with:
           cache-version: 1
 
-      - name: GitHub-only pkgs
-        run: |
-          remotes::install_github("bergant/airtabler")
-          remotes::install_github("ropensci-review-tools/dashboard-pkg")
-        shell: Rscript {0}
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
