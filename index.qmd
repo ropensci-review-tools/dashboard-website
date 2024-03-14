@@ -2,6 +2,6 @@
 title: "rOpenSci Editor Dashboard"
 ---
 
-Overview of [rOpenSci software review
+Overview of all current [rOpenSci software review
 issues](https://github.com/ropensci/software-review/issues), and editor
 availability.
