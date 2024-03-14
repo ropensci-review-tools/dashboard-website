@@ -193,21 +193,21 @@
     },
     "dashboard": {
       "Package": "dashboard",
-      "Version": "0.0.3.009",
+      "Version": "0.0.3.011",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "dashboard-pkg",
       "RemoteUsername": "ropensci-review-tools",
+      "RemoteRepo": "dashboard-pkg",
       "RemoteRef": "HEAD",
-      "RemoteSha": "7516d7273741876ed8124ed1d7b5802e891293a8",
+      "RemoteSha": "b394114cd8e676bb9378ba6f93d23252cc074423",
+      "RemoteHost": "api.github.com",
       "Requirements": [
         "dplyr",
         "gh",
         "gt",
         "lubridate"
       ],
-      "Hash": "f5211e0879f8259c10df26a8a6841a4f"
+      "Hash": "43f2764edb0b19b927939b7a4c4b7380"
     },
     "digest": {
       "Package": "digest",
@@ -330,11 +330,11 @@
       "Version": "1.4.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "gh",
       "RemoteUsername": "r-lib",
+      "RemoteRepo": "gh",
       "RemoteRef": "HEAD",
-      "RemoteSha": "ee2dbed977d71f2a3bae6d118d6a1a597d9575d2",
+      "RemoteSha": "6232e1094a6b1fc01704d1bc54783bf4bdacfe6e",
+      "RemoteHost": "api.github.com",
       "Requirements": [
         "R",
         "cli",
@@ -346,7 +346,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "54fcd082789743d813b8b84abfb8c3cf"
+      "Hash": "d4682d4cdfc193e3cd90c16748e5d52d"
     },
     "gitcreds": {
       "Package": "gitcreds",
