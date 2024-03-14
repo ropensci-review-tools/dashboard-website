@@ -85,23 +85,7 @@ i_nolab <- ifelse (n_nolab == 1L, "issue", "issues")
 ```
 
 There `r v_lab` `r n_lab` labelled pre-submission `r i_lab`, and `r n_nolab`
-unlabelled `r i_nolab`. Labelled `r i_lab` `r v_lab`:
-
-```{r presub-issues-lab, echo = FALSE}
-dat0_lab_url <- unlist (dat0 [which (!is.na (dat0$stage)) [1], "number", drop = TRUE])
-knitr::asis_output (dat0_lab_url)
-```
-
-Unlabelled `r i_nolab` `r v_nolab`:
-
-```{r presub-issues-nolab, echo = FALSE}
-dat0_nolab <- unlist (dat0 [which (is.na (dat0$stage)), "number", drop = TRUE])
-dat0_nolab <- gsub ("^<p>", "", dat0_nolab)
-dat0_nolab <- paste0 (paste0 (dat0_nolab, collapse = ", "), "<br>")
-knitr::asis_output (dat0_nolab)
-```
-
-Data on the labelled `r i_lab` are:
+unlabelled `r i_nolab`. Data on the labelled `r i_lab` are:
 
 ```{r urgency-cols-fn, echo = FALSE}
 add_urgency_cols <- function (tab) {
