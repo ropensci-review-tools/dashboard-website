@@ -149,14 +149,33 @@ add_bg_colours <- function (tab) {
 
 
 ::: {style="all.initial;"}
-```{r presub-table, echo = FALSE}
+```{r presub-table-lab, echo = FALSE}
 keep <- c ("number", "title", "state", "stats", "stage_date", "editor",
-           "elapsed", "urgency")
+           "elapsed", "elapsed_days", "urgency")
 dat0_lab <- dat0 [which (!is.na (dat0$stage)) [1], keep, drop = FALSE]
-dat0_lab <- dplyr::rename (dat0_lab, "inactive_for" = elapsed)
+dat0_lab <- dplyr::rename (dat0_lab, "inactive_for" = elapsed) |>
+    dplyr::arrange (dplyr::desc (elapsed_days))
 dat0_lab$editor [which (!nzchar (dat0_lab$editor))] <- "(None)"
 gt::gt (dat0_lab) |>
-    gt::cols_hide (c (urgency)) |>
+    gt::cols_hide (c (urgency, elapsed_days)) |>
+    add_urgency_cols () |>
+    add_bg_colours ()
+```
+:::
+
+
+Data on the unlabelled `r i_nolab` are:
+
+::: {style="all.initial;"}
+```{r presub-table-nolab, echo = FALSE}
+keep <- c ("number", "title", "state", "stats", "stage_date", "editor",
+           "elapsed", "elapsed_days", "urgency")
+dat0_nolab <- dat0 [which (is.na (dat0$stage)), keep, drop = FALSE]
+dat0_nolab <- dplyr::rename (dat0_nolab, "inactive_for" = elapsed) |>
+    dplyr::arrange (dplyr::desc (elapsed_days))
+dat0_nolab$editor [which (!nzchar (dat0_nolab$editor))] <- "(None)"
+gt::gt (dat0_nolab) |>
+    gt::cols_hide (c (urgency, elapsed_days)) |>
     add_urgency_cols () |>
     add_bg_colours ()
 ```
