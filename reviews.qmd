@@ -157,7 +157,7 @@ dat0_lab <- dplyr::rename (dat0_lab, "inactive_for" = elapsed) |>
     dplyr::arrange (dplyr::desc (elapsed_days))
 dat0_lab$editor [which (!nzchar (dat0_lab$editor))] <- "(None)"
 gt::gt (dat0_lab) |>
-    gt::cols_hide (c (urgency, elapsed_days)) |>
+    gt::cols_hide (c (urgency, state, elapsed_days)) |>
     add_urgency_cols () |>
     add_bg_colours ()
 ```
@@ -175,7 +175,7 @@ dat0_nolab <- dplyr::rename (dat0_nolab, "inactive_for" = elapsed) |>
     dplyr::arrange (dplyr::desc (elapsed_days))
 dat0_nolab$editor [which (!nzchar (dat0_nolab$editor))] <- "(None)"
 gt::gt (dat0_nolab) |>
-    gt::cols_hide (c (urgency, elapsed_days)) |>
+    gt::cols_hide (c (urgency, state, stage_date, editor, elapsed_days)) |>
     add_urgency_cols () |>
     add_bg_colours ()
 ```
