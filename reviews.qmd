@@ -103,22 +103,9 @@ knitr::asis_output (dat0_nolab)
 
 Data on the labelled `r i_lab` are:
 
-::: {style="all.initial;"}
-```{r presub-table, echo = FALSE}
-keep <- c ("number", "title", "state", "stats", "stage_date", "editor",
-           "elapsed", "urgency")
-dat0_lab <- dat0 [which (!is.na (dat0$stage)) [1], keep, drop = FALSE]
-dat0_lab <- dplyr::rename (dat0_lab, "inactive_for" = elapsed)
-dat0_lab$editor [which (!nzchar (dat0_lab$editor))] <- "(None)"
-gt::gt (dat0_lab) |>
-    gt::cols_hide (c (urgency)) |>
-    gt::tab_style (
-        style = list (gt::cell_fill (color = "#FFFF8088")),
-        locations = gt::cells_body (
-            columns = c (`number`, `title`, `state`),
-            rows = urgency == 1
-        )
-    ) |>
+```{r urgency-cols-fn, echo = FALSE}
+add_urgency_cols <- function (tab) {
+    tab |>
     gt::tab_style (
         style = list (gt::cell_fill (color = "#FFFF0088")),
         locations = gt::cells_body (
@@ -146,13 +133,32 @@ gt::gt (dat0_lab) |>
             columns = c (`number`, `title`, `state`),
             rows = urgency == 5
         )
-    ) |>
+    )
+}
+
+add_bg_colours <- function (tab) {
+    tab |>
     gt::tab_options (
         heading.background.color = "#ACEACE",
         row_group.background.color = "#ACEACE",
         column_labels.background.color = "#9BD9BD",
         heading.title.font.size = "200%"
     )
+}
+```
+
+
+::: {style="all.initial;"}
+```{r presub-table, echo = FALSE}
+keep <- c ("number", "title", "state", "stats", "stage_date", "editor",
+           "elapsed", "urgency")
+dat0_lab <- dat0 [which (!is.na (dat0$stage)) [1], keep, drop = FALSE]
+dat0_lab <- dplyr::rename (dat0_lab, "inactive_for" = elapsed)
+dat0_lab$editor [which (!nzchar (dat0_lab$editor))] <- "(None)"
+gt::gt (dat0_lab) |>
+    gt::cols_hide (c (urgency)) |>
+    add_urgency_cols () |>
+    add_bg_colours ()
 ```
 :::
 
