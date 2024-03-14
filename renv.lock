@@ -193,13 +193,13 @@
     },
     "dashboard": {
       "Package": "dashboard",
-      "Version": "0.0.3.011",
+      "Version": "0.0.3.012",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteUsername": "ropensci-review-tools",
       "RemoteRepo": "dashboard-pkg",
       "RemoteRef": "HEAD",
-      "RemoteSha": "b394114cd8e676bb9378ba6f93d23252cc074423",
+      "RemoteSha": "3d6ae5d882e7f91feb7d92aaae13e54160be2d41",
       "RemoteHost": "api.github.com",
       "Requirements": [
         "dplyr",
@@ -207,7 +207,7 @@
         "gt",
         "lubridate"
       ],
-      "Hash": "43f2764edb0b19b927939b7a4c4b7380"
+      "Hash": "59187eaba7aaa672fa494c9e46679f38"
     },
     "digest": {
       "Package": "digest",
