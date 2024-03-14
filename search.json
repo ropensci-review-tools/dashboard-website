@@ -4,13 +4,27 @@
     "href": "index.html",
     "title": "rOpenSci Editor Dashboard",
     "section": "",
-    "text": "Overview of rOpenSci software review issues, and editor availability."
+    "text": "Overview of all current rOpenSci software review issues, and editor availability."
   },
   {
     "objectID": "editors.html",
     "href": "editors.html",
     "title": "Editor Availability",
     "section": "",
-    "text": "The following table summarises the availability of general (not statistical) editors. The inactive_for values are hyperlinked to the most recent submission issue for each editor.\n\n\n\n\n\n\n\n\n\nEditor Status Overview\n\n\neditor\ninactive_for\n\n\n\n\nFREE\n\n\nmpadge\n13 months\n\n\nmaelle\n1 day\n\n\nhaozhu233\nNA\n\n\nBUSY\n\n\nPakillo\n3 weeks\n\n\nnoamross\n2 weeks\n\n\njhollist\n9 days\n\n\nkarthik\n8 days\n\n\njooolia\n4 days\n\n\nemilyriederer\n1 day\n\n\nldecicco-USGS\n1 day\n\n\nmaurolepore\n1 day\n\n\nVACATION\n\n\nannakrystalli\n4 weeks"
+    "text": "The following table summarises the availability of general (not statistical) editors. The inactive_for values are hyperlinked to the most recent submission issue for each editor.\n\n\n\n\n\n\n\n\n\nEditor Status Overview\n\n\neditor\ninactive_for\n\n\n\n\nFREE\n\n\nmpadge\n13 months\n\n\nmaelle\n1 day\n\n\nhaozhu233\nNA\n\n\nBUSY\n\n\nPakillo\n3 weeks\n\n\nnoamross\n2 weeks\n\n\njhollist\n9 days\n\n\nkarthik\n8 days\n\n\njooolia\n4 days\n\n\nmaurolepore\n2 days\n\n\nemilyriederer\n1 day\n\n\nldecicco-USGS\n1 day\n\n\nVACATION\n\n\nannakrystalli\n4 weeks"
+  },
+  {
+    "objectID": "reviews.html",
+    "href": "reviews.html",
+    "title": "Software Review Overview",
+    "section": "",
+    "text": "There are currently:"
+  },
+  {
+    "objectID": "reviews.html#pre-submission",
+    "href": "reviews.html#pre-submission",
+    "title": "Software Review Overview",
+    "section": "Pre-submission",
+    "text": "Pre-submission\nThere is 1 labelled pre-submission issue, and 4 unlabelled issues. Labelled issue is:\n\n\n562\n\n\nUnlabelled issues are:\n\n\n628, 629, 631, 632\n\n\nData on the labelled issue are:\n\n\n\n\n\n\n\n\n\n\nnumber\ntitle\nstate\nstats\nstage_date\neditor\ninactive_for\n\n\n\n\n562\ncat2cat: Handling an Inconsistently Coded Categorical Variable in a Panel Dataset\nOPEN\nFALSE\n2022-12-16\n(None)\n2 weeks"
   }
 ]
