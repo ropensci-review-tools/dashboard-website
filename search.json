@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "rOpenSci Editor Dashboard",
@@ -18,6 +11,6 @@
     "href": "editors.html",
     "title": "Editor Availability",
     "section": "",
-    "text": "The following table summarises the availability of general (not statistical) editors. The inactive_for values are hyperlinked to the most recent submission issue for each editor.\n\n\n\n\n\n\n\n\n\nEditor Status Overview\n\n\neditor\ninactive_for\n\n\n\n\nFREE\n\n\nmpadge\n13 months\n\n\nhaozhu233\nNA\n\n\nBUSY\n\n\nPakillo\n2 weeks\n\n\nnoamross\n2 weeks\n\n\nmaurolepore\n9 days\n\n\njhollist\n8 days\n\n\nkarthik\n6 days\n\n\nemilyriederer\n5 days\n\n\njooolia\n2 days\n\n\nldecicco-USGS\n1 day\n\n\nmaelle\n1 day\n\n\nVACATION\n\n\nannakrystalli\n4 weeks"
+    "text": "The following table summarises the availability of general (not statistical) editors. The inactive_for values are hyperlinked to the most recent submission issue for each editor.\n\n\n\n\n\n\n\n\n\nEditor Status Overview\n\n\neditor\ninactive_for\n\n\n\n\nFREE\n\n\nmpadge\n13 months\n\n\nmaelle\n1 day\n\n\nhaozhu233\nNA\n\n\nBUSY\n\n\nPakillo\n3 weeks\n\n\nnoamross\n2 weeks\n\n\njhollist\n9 days\n\n\nkarthik\n8 days\n\n\njooolia\n4 days\n\n\nemilyriederer\n1 day\n\n\nldecicco-USGS\n1 day\n\n\nmaurolepore\n1 day\n\n\nVACATION\n\n\nannakrystalli\n4 weeks"
   }
 ]
