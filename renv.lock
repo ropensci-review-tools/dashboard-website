@@ -4,7 +4,7 @@
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://cloud.r-project.org"
+        "URL": "https://packagemanager.posit.co/cran/latest"
       }
     ]
   },
@@ -193,21 +193,21 @@
     },
     "dashboard": {
       "Package": "dashboard",
-      "Version": "0.0.3.001",
+      "Version": "0.0.3.009",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "dashboard-pkg",
       "RemoteUsername": "ropensci-review-tools",
       "RemoteRef": "HEAD",
-      "RemoteSha": "c20fd1e256217bdb45104fe9890613c4b708deb2",
+      "RemoteSha": "7516d7273741876ed8124ed1d7b5802e891293a8",
       "Requirements": [
         "dplyr",
         "gh",
         "gt",
         "lubridate"
       ],
-      "Hash": "b78638a11f51bc1e136a106da29acaa0"
+      "Hash": "f5211e0879f8259c10df26a8a6841a4f"
     },
     "digest": {
       "Package": "digest",
