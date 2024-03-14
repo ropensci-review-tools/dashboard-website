@@ -11,6 +11,7 @@ format:
 #| cache: true
 library (dashboard)
 library (gt)
+source ("utils.R")
 rev_dat <- review_status(open_only = TRUE, browse = FALSE, quiet = TRUE)
 # The rest is code from dashboard/pkg/R/gh-table.R
 ```
@@ -117,16 +118,6 @@ add_urgency_cols <- function (tab) {
             columns = c (`number`, `title`, `state`),
             rows = urgency == 5
         )
-    )
-}
-
-add_bg_colours <- function (tab) {
-    tab |>
-    gt::tab_options (
-        heading.background.color = "#ACEACE",
-        row_group.background.color = "#ACEACE",
-        column_labels.background.color = "#9BD9BD",
-        heading.title.font.size = "200%"
     )
 }
 ```

@@ -11,6 +11,7 @@ format:
 #| cache: true
 library (dashboard)
 library (gt)
+source ("utils.R")
 ed_dat <- editor_status (quiet = TRUE)
 ```
 
@@ -82,10 +83,5 @@ gt::gt (
             rows = status == "FREE"
         )
     ) |>
-    gt::tab_options (
-        heading.background.color = "#ACEACE",
-        row_group.background.color = "#ACEACE",
-        column_labels.background.color = "#9BD9BD",
-        heading.title.font.size = "200%"
-    )
+    add_bg_colours ()
 ```
